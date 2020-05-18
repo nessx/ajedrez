@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public int numeromovimientos;
 
     //defino las piezas
-    // "x" es la parte de arriba y "y" la de abajo de las fichas
+    // "x" es la parte de arriba y "y" la de abajo de las piezas
     pieza xrey;
     pieza yrey;
 

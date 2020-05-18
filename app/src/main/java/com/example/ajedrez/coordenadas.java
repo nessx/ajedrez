@@ -9,15 +9,18 @@ public class coordenadas {
         this.y = y;
     }
 
-    void setX(int x) {
+    void setX(int x)
+    {
         this.x = x;
     }
 
     public int getX() {
+
         return x;
     }
 
     public int getY() {
+
         return y;
     }
 
