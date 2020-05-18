@@ -7,6 +7,595 @@
     tools:context=".MainActivity">
 
     <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="344dp"
+        android:layout_height="344dp"
+        android:columnCount="8"
+        android:rowCount="8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    <TextView
+        android:id="@+id/A8"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false"
+        android:background="@color/colorBoardDark" />
+
+    <TextView
+        android:id="@+id/B8"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false"/>
+
+    <TextView
+        android:id="@+id/C8"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false"/>
+
+    <TextView
+        android:id="@+id/D8"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/E8"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/F8"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/G8"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/H8"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/A7"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B7"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/C7"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/D7"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/E7"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false"/>
+
+    <TextView
+        android:id="@+id/F"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/G3"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/H2"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/A6"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B31"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B32"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false"/>
+
+    <TextView
+        android:id="@+id/B33"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B34"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false"/>
+
+    <TextView
+        android:id="@+id/B35"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B36"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B37"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/A7"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B41"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B42"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B43"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B44"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B45"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B46"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B47"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/A6"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B51"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B52"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B53"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B54"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B55"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B56"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B57"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/A7"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B61"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B62"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B63"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B64"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B65"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B66"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B67"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B70"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B71"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B72"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B73"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B74"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B75"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B76"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B77"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false"/>
+
+    <TextView
+        android:id="@+id/B80"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B81"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B82"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B83"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B84"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B85"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B86"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+
+    <TextView
+        android:id="@+id/B87"
+        android:layout_width="43dp"
+        android:layout_height="43dp"
+        android:elevation="1dp"
+        android:clickable="true"
+        android:onClick="onClick"
+        android:longClickable="false" />
+    </GridLayout>
+
+    <GridLayout
         android:id="@+id/gridLayout2"
         android:layout_width="344dp"
         android:layout_height="344dp"
@@ -401,593 +990,5 @@
             android:layout_height="43dp"
             android:background="@color/colorBoardDark" />
 
-    </GridLayout>
-
-    <GridLayout
-        android:id="@+id/gridLayout"
-        android:layout_width="344dp"
-        android:layout_height="344dp"
-        android:columnCount="8"
-        android:rowCount="8"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-    <TextView
-        android:id="@+id/B00"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false"/>
-
-    <TextView
-        android:id="@+id/B01"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false"/>
-
-    <TextView
-        android:id="@+id/B02"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false"/>
-
-    <TextView
-        android:id="@+id/B03"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B04"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B05"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B06"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B07"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B20"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B21"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B22"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B23"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B24"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false"/>
-
-    <TextView
-        android:id="@+id/B25"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B26"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B27"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B30"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B31"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B32"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false"/>
-
-    <TextView
-        android:id="@+id/B33"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B34"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false"/>
-
-    <TextView
-        android:id="@+id/B35"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B36"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B37"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B40"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B41"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B42"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B43"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B44"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B45"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B46"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B47"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B50"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B51"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B52"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B53"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B54"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B55"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B56"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B57"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B60"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B61"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B62"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B63"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B64"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B65"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B66"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B67"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B70"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B71"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B72"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B73"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B74"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B75"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B76"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B77"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false"/>
-
-    <TextView
-        android:id="@+id/B80"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B81"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B82"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B83"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B84"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B85"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B86"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
-
-    <TextView
-        android:id="@+id/B87"
-        android:layout_width="43dp"
-        android:layout_height="43dp"
-        android:elevation="1dp"
-        android:clickable="true"
-        android:onClick="onClick"
-        android:longClickable="false" />
     </GridLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
