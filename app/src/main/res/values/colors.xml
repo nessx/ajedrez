@@ -4,8 +4,8 @@
         <color name="colorPrimaryDark">#303F9F</color>
         <color name="colorAccent">#FF4081</color>
         <color name="colorBoardDark">#0B51AA</color>
-        <color name="colorBoardLight">#000000</color>
-        <color name="colorDanger">#a2ce2a7c</color>
+        <color name="colorBoardLight">#232220</color>
+        <color name="colorDanger">#0c82ff</color>
         <color name="colorPositionAvailable">#795e45e6</color>
         <color name="colorSelected">#969b1be1</color>
         <color name="colorKingInDanger">#8dff0004</color>
