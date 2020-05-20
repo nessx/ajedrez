@@ -357,17 +357,17 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
                     switch (x) {
                         case 0:
                             if (p.esblanca()) {
-                                ftablero[i][j].setBackgroundResource(R.drawable.wrey);
-                            } else {
                                 ftablero[i][j].setBackgroundResource(R.drawable.brey);
+                            } else {
+                                ftablero[i][j].setBackgroundResource(R.drawable.wrey);
                             }
                             break;
 
                         case 1:
                             if (p.esblanca()) {
-                                ftablero[i][j].setBackgroundResource(R.drawable.wreina);
-                            } else {
                                 ftablero[i][j].setBackgroundResource(R.drawable.breina);
+                            } else {
+                                ftablero[i][j].setBackgroundResource(R.drawable.wreina);
                             }
                             break;
 
@@ -397,9 +397,9 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
                         case 5:
                             if (p.esblanca()) {
-                                ftablero[i][j].setBackgroundResource(R.drawable.wpeon);
-                            } else {
                                 ftablero[i][j].setBackgroundResource(R.drawable.bpeon);
+                            } else {
+                                ftablero[i][j].setBackgroundResource(R.drawable.wpeon);
                             }
                             break;
 
