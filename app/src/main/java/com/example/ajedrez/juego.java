@@ -4,7 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Build;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.view.View;
 import android.widget.LinearLayout;
 import android.widget.TextView;
@@ -336,17 +335,17 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
                     switch (x) {
                         case 0:
                             if (p.esblanca()) {
-                                ftablero[i][j].setBackgroundResource(R.drawable.wreina);
+                                ftablero[i][j].setBackgroundResource(R.drawable.wrey);
                             } else {
-                                ftablero[i][j].setBackgroundResource(R.drawable.breina);
+                                ftablero[i][j].setBackgroundResource(R.drawable.brey);
                             }
                             break;
 
                         case 1:
                             if (p.esblanca()) {
-                                ftablero[i][j].setBackgroundResource(R.drawable.wrey);
+                                ftablero[i][j].setBackgroundResource(R.drawable.wreina);
                             } else {
-                                ftablero[i][j].setBackgroundResource(R.drawable.brey);
+                                ftablero[i][j].setBackgroundResource(R.drawable.breina);
                             }
                             break;
 
@@ -681,7 +680,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
             if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza() == null){
                 if(moverselec(listacoordenadas , posicionclickada)){
 
-                    guardartablero();
+                    registrotablero();
                     if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza() instanceof rey){
                         if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza().esblanca() != Primerturno){
                             juego_terminado.setVisibility(View.VISIBLE);
@@ -714,7 +713,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
                         if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza().esblanca() != Primerturno){
                             if(moverselec(listacoordenadas , posicionclickada)){
 
-                                guardartablero();
+                                registrotablero();
                                 if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza() instanceof rey){
                                     if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza().esblanca() != Primerturno){
                                         juego_terminado.setVisibility(View.VISIBLE);
@@ -761,7 +760,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         settablero();
     }
 
-    public void guardartablero(){
+    public void registrotablero(){
         numeromovimientos++;
         ultimosmovimientos.add(numeromovimientos-1 ,tablero2 );
 
