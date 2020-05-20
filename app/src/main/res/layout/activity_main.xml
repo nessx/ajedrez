@@ -37,385 +37,385 @@
             android:id="@+id/AA8"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/BB8"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/CC8"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/DD8"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/EE8"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/FF8"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/GG8"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/HH8"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/AA7"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/BB7"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/CC7"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/DD7"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/EE7"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/FF7"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/GG7"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/HH7"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/AA6"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/BB6"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/CC6"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/DD6"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/EE6"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/FF6"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/GG6"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/HH6"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/AA5"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/BB5"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/CC5"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/DD5"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/EE5"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/FF5"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/GG5"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/HH5"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/AA4"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/BB4"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/CC4"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/DD4"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/EE4"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/FF4"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/GG4"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/HH4"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/AA3"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/BB3"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/CC3"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/DD3"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/EE3"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/FF3"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/GG3"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/HH3"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/AA2"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/BB2"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/CC2"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/DD2"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/EE2"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/FF2"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/GG2"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/HH2"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/AA1"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/BB1"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/CC1"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/DD1"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/EE1"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/FF1"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
         <TextView
             android:id="@+id/GG1"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardLight" />
+            android:background="@color/colortableroclaro" />
 
         <TextView
             android:id="@+id/HH1"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark" />
+            android:background="@color/colortablerooscuro" />
 
     </GridLayout>
 
@@ -434,7 +434,7 @@
             android:id="@+id/A8"
             android:layout_width="43dp"
             android:layout_height="43dp"
-            android:background="@color/colorBoardDark"
+            android:background="@color/colortablerooscuro"
             android:clickable="true"
             android:elevation="1dp"
             android:longClickable="false"

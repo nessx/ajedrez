@@ -143,38 +143,38 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         tablero[0][7].setpieza(ytorre1);
         tablero[1][7].setpieza(ycaballo1);
         tablero[2][7].setpieza(yalfil1);
-        tablero[3][7].setpieza(xreina);
-        tablero[4][7].setpieza(xrey);
+        tablero[3][7].setpieza(yreina);
+        tablero[4][7].setpieza(yrey);
         tablero[5][7].setpieza(yalfil2);
         tablero[6][7].setpieza(ycaballo2);
         tablero[7][7].setpieza(ytorre2);
 
-        tablero[0][6].setpieza(xpeon1);
-        tablero[1][6].setpieza(xpeon2);
-        tablero[2][6].setpieza(xpeon3);
-        tablero[3][6].setpieza(xpeon4);
-        tablero[4][6].setpieza(xpeon5);
-        tablero[5][6].setpieza(xpeon6);
-        tablero[6][6].setpieza(xpeon7);
-        tablero[7][6].setpieza(xpeon8);
+        tablero[0][6].setpieza(ypeon1);
+        tablero[1][6].setpieza(ypeon2);
+        tablero[2][6].setpieza(ypeon3);
+        tablero[3][6].setpieza(ypeon4);
+        tablero[4][6].setpieza(ypeon5);
+        tablero[5][6].setpieza(ypeon6);
+        tablero[6][6].setpieza(ypeon7);
+        tablero[7][6].setpieza(ypeon8);
 
         tablero[0][0].setpieza(xtorre1);
         tablero[1][0].setpieza(xcaballo1);
         tablero[2][0].setpieza(xalfil1);
-        tablero[3][0].setpieza(yreina);
-        tablero[4][0].setpieza(yrey);
+        tablero[3][0].setpieza(xreina);
+        tablero[4][0].setpieza(xrey);
         tablero[5][0].setpieza(xalfil2);
         tablero[6][0].setpieza(xcaballo2);
         tablero[7][0].setpieza(xtorre2);
 
-        tablero[0][1].setpieza(ypeon1);
-        tablero[1][1].setpieza(ypeon2);
-        tablero[2][1].setpieza(ypeon3);
-        tablero[3][1].setpieza(ypeon4);
-        tablero[4][1].setpieza(ypeon5);
-        tablero[5][1].setpieza(ypeon6);
-        tablero[6][1].setpieza(ypeon7);
-        tablero[7][1].setpieza(ypeon8);
+        tablero[0][1].setpieza(xpeon1);
+        tablero[1][1].setpieza(xpeon2);
+        tablero[2][1].setpieza(xpeon3);
+        tablero[3][1].setpieza(xpeon4);
+        tablero[4][1].setpieza(xpeon5);
+        tablero[5][1].setpieza(xpeon6);
+        tablero[6][1].setpieza(xpeon7);
+        tablero[7][1].setpieza(xpeon8);
 
         //primera tanda de numeros
         ftablero[0][0] = (TextView) findViewById(R.id.A8);
@@ -357,17 +357,17 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
                     switch (x) {
                         case 0:
                             if (p.esblanca()) {
-                                ftablero[i][j].setBackgroundResource(R.drawable.brey);
-                            } else {
                                 ftablero[i][j].setBackgroundResource(R.drawable.wrey);
+                            } else {
+                                ftablero[i][j].setBackgroundResource(R.drawable.brey);
                             }
                             break;
 
                         case 1:
                             if (p.esblanca()) {
-                                ftablero[i][j].setBackgroundResource(R.drawable.breina);
-                            } else {
                                 ftablero[i][j].setBackgroundResource(R.drawable.wreina);
+                            } else {
+                                ftablero[i][j].setBackgroundResource(R.drawable.breina);
                             }
                             break;
 
@@ -397,9 +397,9 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
                         case 5:
                             if (p.esblanca()) {
-                                ftablero[i][j].setBackgroundResource(R.drawable.bpeon);
-                            } else {
                                 ftablero[i][j].setBackgroundResource(R.drawable.wpeon);
+                            } else {
+                                ftablero[i][j].setBackgroundResource(R.drawable.bpeon);
                             }
                             break;
 
@@ -693,7 +693,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
                 }else{
                     listacoordenadas.clear();
                     listacoordenadas = tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza().movperm(posicionclickada, tablero);
-                    fondodetablero[posicionclickada.getX()][posicionclickada.getY()].setBackgroundResource(R.color.colorSelected);
+                    fondodetablero[posicionclickada.getX()][posicionclickada.getY()].setBackgroundResource(R.color.colormov);
                     setColorposicionperm(listacoordenadas);
                     algoseleccionado = true;
                 }
@@ -768,7 +768,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
                             listacoordenadas.clear();
                             listacoordenadas = tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza().movperm(posicionclickada, tablero);
-                            fondodetablero[posicionclickada.getX()][posicionclickada.getY()].setBackgroundResource(R.color.colorSelected);
+                            fondodetablero[posicionclickada.getX()][posicionclickada.getY()].setBackgroundResource(R.color.colormov);
                             setColorposicionperm(listacoordenadas);
                             algoseleccionado = true;
                         }
@@ -822,9 +822,9 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
             for(int i=0;i<8;i++){
                 for(int j=0;j<8;j++){
                     if((i+j)%2==0){
-                        fondodetablero[i][j].setBackgroundResource(R.color.colorBoardDark);
+                        fondodetablero[i][j].setBackgroundResource(R.color.colortablerooscuro);
                     }else{
-                        fondodetablero[i][j].setBackgroundResource(R.color.colorBoardLight);
+                        fondodetablero[i][j].setBackgroundResource(R.color.colortableroclaro);
                     }
                 }
             }
@@ -882,9 +882,9 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
     private void resetcolorposicionperm(ArrayList<Coordenadas> listacoordenadas) {
         for(int i=0; i<listacoordenadas.size(); i++){
             if((listacoordenadas.get(i).getX() + listacoordenadas.get(i).getY())%2==0){
-                fondodetablero[listacoordenadas.get(i).getX()][listacoordenadas.get(i).getY()].setBackgroundResource(R.color.colorBoardDark);
+                fondodetablero[listacoordenadas.get(i).getX()][listacoordenadas.get(i).getY()].setBackgroundResource(R.color.colortablerooscuro);
             }else {
-                fondodetablero[listacoordenadas.get(i).getX()][listacoordenadas.get(i).getY()].setBackgroundResource(R.color.colorBoardLight);
+                fondodetablero[listacoordenadas.get(i).getX()][listacoordenadas.get(i).getY()].setBackgroundResource(R.color.colortableroclaro);
             }
         }
     }
@@ -893,9 +893,9 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
         for(int i=0; i<list.size(); i++){
             if(tablero[list.get(i).getX()][list.get(i).getY()].getpieza() == null){
-                fondodetablero[list.get(i).getX()][list.get(i).getY()].setBackgroundResource(R.color.colorPositionAvailable);
+                fondodetablero[list.get(i).getX()][list.get(i).getY()].setBackgroundResource(R.color.colorposdispo);
             }else{
-                fondodetablero[list.get(i).getX()][list.get(i).getY()].setBackgroundResource(R.color.colorDanger);
+                fondodetablero[list.get(i).getX()][list.get(i).getY()].setBackgroundResource(R.color.colorpeligro);
             }
         }
     }
@@ -913,9 +913,9 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
     private void resetColorAtultimaposicionition(Coordenadas ultimaposicion){
         if((ultimaposicion.getX() + ultimaposicion.getY())%2==0){
-            fondodetablero[ultimaposicion.getX()][ultimaposicion.getY()].setBackgroundResource(R.color.colorBoardDark);
+            fondodetablero[ultimaposicion.getX()][ultimaposicion.getY()].setBackgroundResource(R.color.colortablerooscuro);
         }else {
-            fondodetablero[ultimaposicion.getX()][ultimaposicion.getY()].setBackgroundResource(R.color.colorBoardLight);
+            fondodetablero[ultimaposicion.getX()][ultimaposicion.getY()].setBackgroundResource(R.color.colortableroclaro);
         }
     }
 
@@ -933,13 +933,13 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
                         if(tablero[List.get(x).getX()][List.get(x).getY()].getpieza() instanceof rey){
 
                             if((List.get(x).getX()+List.get(x).getY())%2==0){
-                                fondodetablero[List.get(x).getX()][List.get(x).getY()].setBackgroundResource(R.color.colorBoardDark);
+                                fondodetablero[List.get(x).getX()][List.get(x).getY()].setBackgroundResource(R.color.colortablerooscuro);
                             }else{
-                                fondodetablero[List.get(x).getX()][List.get(x).getY()].setBackgroundResource(R.color.colorBoardLight);
+                                fondodetablero[List.get(x).getX()][List.get(x).getY()].setBackgroundResource(R.color.colortableroclaro);
                             }
 
                             if(tablero[i][j].getpieza().esblanca() != tablero[List.get(x).getX()][List.get(x).getY()].getpieza().esblanca()){
-                                fondodetablero[List.get(x).getX()][List.get(x).getY()].setBackgroundResource(R.color.colorKingInDanger);
+                                fondodetablero[List.get(x).getX()][List.get(x).getY()].setBackgroundResource(R.color.colorreyenpeligro);
                             }
                         }
                     }
