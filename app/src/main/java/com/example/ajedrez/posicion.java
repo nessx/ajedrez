@@ -1,21 +1,21 @@
 package com.example.ajedrez;
 
-import com.example.ajedrez.piezas.pieza;
+import com.example.ajedrez.piezas.Pieza;
 
 public class posicion {
-    private pieza pieza;
+    private Pieza pieza;
 
 
-    posicion(pieza pieza ) {
+    posicion(Pieza pieza ) {
         this.pieza = pieza;
     }
 
-    public pieza getpieza() {
+    public Pieza getpieza() {
         return pieza;
 
     }
 
-    void setpieza(pieza pieza) {
+    void setpieza(Pieza pieza) {
         this.pieza = pieza;
     }
 }

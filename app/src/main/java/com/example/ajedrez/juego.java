@@ -2,7 +2,6 @@ package com.example.ajedrez;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -12,7 +11,7 @@ import android.widget.TextView;
 import com.example.ajedrez.piezas.alfil;
 import com.example.ajedrez.piezas.caballo;
 import com.example.ajedrez.piezas.peon;
-import com.example.ajedrez.piezas.pieza;
+import com.example.ajedrez.piezas.Pieza;
 import com.example.ajedrez.piezas.reina;
 import com.example.ajedrez.piezas.rey;
 import com.example.ajedrez.piezas.torre;
@@ -22,12 +21,12 @@ import java.util.ArrayList;
 public class juego extends AppCompatActivity implements View.OnClickListener{
 
     public Boolean Primerturno;
-    public ArrayList<coordenadas> listacoordenadas = new ArrayList<>();
+    public ArrayList<Coordenadas> listacoordenadas = new ArrayList<>();
     public posicion[][] tablero = new posicion[8][8];
     public posicion[][] tablero2 = new posicion[8][8];
     public Boolean algoseleccionado = false;
-    public coordenadas ultimaposicion = null ;
-    public coordenadas posicionclickada = new coordenadas(0, 0);
+    public Coordenadas ultimaposicion = null ;
+    public Coordenadas posicionclickada = new Coordenadas(0, 0);
     public TextView juego_terminado;
     public TextView[][] ftablero = new TextView[8][8];
     public TextView[][] fondodetablero = new TextView[8][8];
@@ -37,44 +36,44 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
     //defino las piezas
     // "x" es la parte de arriba y "y" la de abajo de las piezas
-    pieza xrey;
-    pieza yrey;
+    Pieza xrey;
+    Pieza yrey;
 
-    pieza xreina;
-    pieza yreina;
+    Pieza xreina;
+    Pieza yreina;
 
-    pieza xcaballo1;
-    pieza xcaballo2;
-    pieza ycaballo1;
-    pieza ycaballo2;
+    Pieza xcaballo1;
+    Pieza xcaballo2;
+    Pieza ycaballo1;
+    Pieza ycaballo2;
 
-    pieza xtorre1;
-    pieza xtorre2;
-    pieza ytorre1;
-    pieza ytorre2;
+    Pieza xtorre1;
+    Pieza xtorre2;
+    Pieza ytorre1;
+    Pieza ytorre2;
 
-    pieza xalfil1;
-    pieza xalfil2;
-    pieza yalfil1;
-    pieza yalfil2;
+    Pieza xalfil1;
+    Pieza xalfil2;
+    Pieza yalfil1;
+    Pieza yalfil2;
 
-    pieza xpeon1;
-    pieza xpeon2;
-    pieza xpeon3;
-    pieza xpeon4;
-    pieza xpeon5;
-    pieza xpeon6;
-    pieza xpeon7;
-    pieza xpeon8;
+    Pieza xpeon1;
+    Pieza xpeon2;
+    Pieza xpeon3;
+    Pieza xpeon4;
+    Pieza xpeon5;
+    Pieza xpeon6;
+    Pieza xpeon7;
+    Pieza xpeon8;
 
-    pieza ypeon1;
-    pieza ypeon2;
-    pieza ypeon3;
-    pieza ypeon4;
-    pieza ypeon5;
-    pieza ypeon6;
-    pieza ypeon7;
-    pieza ypeon8;
+    Pieza ypeon1;
+    Pieza ypeon2;
+    Pieza ypeon3;
+    Pieza ypeon4;
+    Pieza ypeon5;
+    Pieza ypeon6;
+    Pieza ypeon7;
+    Pieza ypeon8;
     //end
 
     @Override
@@ -137,7 +136,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
                 tablero[i][j] = new posicion(null);
-                tablero[i][j] = new posicion(null);
+                tablero2[i][j] = new posicion(null);
             }
         }
 
@@ -343,7 +342,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
 
-                pieza p = tablero[i][j].getpieza();
+                Pieza p = tablero[i][j].getpieza();
                 int x;
 
                 if (tablero[i][j].getpieza() != null) {
@@ -420,7 +419,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
         switch (v.getId()) {
             case R.id.A8:
-                posicionclickada = new coordenadas(0, 0);
+                posicionclickada = new Coordenadas(0, 0);
                 break;
             case R.id.B8:
                 posicionclickada.setX(1);
@@ -779,7 +778,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         }
 
         reypeligro();
-        ultimaposicion = new coordenadas(posicionclickada.getX(), posicionclickada.getY());
+        ultimaposicion = new Coordenadas(posicionclickada.getX(), posicionclickada.getY());
         settablero();
     }
 
@@ -880,7 +879,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         opciones_peon.setVisibility(View.INVISIBLE);
     }
 
-    private void resetcolorposicionperm(ArrayList<coordenadas> listacoordenadas) {
+    private void resetcolorposicionperm(ArrayList<Coordenadas> listacoordenadas) {
         for(int i=0; i<listacoordenadas.size(); i++){
             if((listacoordenadas.get(i).getX() + listacoordenadas.get(i).getY())%2==0){
                 fondodetablero[listacoordenadas.get(i).getX()][listacoordenadas.get(i).getY()].setBackgroundResource(R.color.colorBoardDark);
@@ -890,7 +889,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         }
     }
 
-    void setColorposicionperm(ArrayList<coordenadas> list){
+    void setColorposicionperm(ArrayList<Coordenadas> list){
 
         for(int i=0; i<list.size(); i++){
             if(tablero[list.get(i).getX()][list.get(i).getY()].getpieza() == null){
@@ -901,7 +900,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         }
     }
 
-    private boolean moverselec(ArrayList<coordenadas> piece, coordenadas coordinate) {
+    private boolean moverselec(ArrayList<Coordenadas> piece, Coordenadas coordinate) {
         Boolean permitido = false;
         for(int i =0;i<piece.size();i++){
             if(piece.get(i).getX() == coordinate.getX()  &&  piece.get(i).getY() == coordinate.getY()){
@@ -912,7 +911,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         return permitido;
     }
 
-    private void resetColorAtultimaposicionition(coordenadas ultimaposicion){
+    private void resetColorAtultimaposicionition(Coordenadas ultimaposicion){
         if((ultimaposicion.getX() + ultimaposicion.getY())%2==0){
             fondodetablero[ultimaposicion.getX()][ultimaposicion.getY()].setBackgroundResource(R.color.colorBoardDark);
         }else {
@@ -921,13 +920,13 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
     }
 
     private void reypeligro(){
-        ArrayList<coordenadas> List = new ArrayList<>();
+        ArrayList<Coordenadas> List = new ArrayList<>();
 
         for(int i=0;i<8;i++){
             for(int j=0;j<8;j++){
                 if(tablero[i][j].getpieza() != null){
                     List.clear();
-                    coordenadas c = new coordenadas(i,j);
+                    Coordenadas c = new Coordenadas(i,j);
                     List = tablero[i][j].getpieza().movperm(c,tablero);
 
                     for (int x=0;x<List.size();x++){

@@ -1,10 +1,10 @@
 package com.example.ajedrez;
 
-public class coordenadas {
+public class Coordenadas {
     private int x;
     private int y;
 
-    public coordenadas(int x, int y) {
+    public Coordenadas(int x, int y) {
         this.x = x;
         this.y = y;
     }
