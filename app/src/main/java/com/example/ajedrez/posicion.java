@@ -18,4 +18,7 @@ public class posicion {
     void setpieza(pieza pieza) {
         this.pieza = pieza;
     }
+
+    public void set(com.example.ajedrez.piezas.pieza getpieza) {
+    }
 }
