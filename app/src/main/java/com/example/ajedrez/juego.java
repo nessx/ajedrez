@@ -31,7 +31,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
     public TextView juego_terminado;
     public TextView[][] ftablero = new TextView[8][8];
     public TextView[][] fondodetablero = new TextView[8][8];
-    public ArrayList<posicion[][]> ultimosmovimientos = new ArrayList<>();
+    public ArrayList<posicion[][]> ultimovimiento = new ArrayList<>();
     public LinearLayout opciones_peon;
     public int numeromovimientos;
 
@@ -762,20 +762,20 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
     public void registrotablero(){
         numeromovimientos++;
-        ultimosmovimientos.add(numeromovimientos-1 ,tablero2 );
+        ultimovimiento.add(numeromovimientos-1 ,tablero2 );
 
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
-                ultimosmovimientos.get(numeromovimientos-1)[i][j] = new posicion(null);
+                ultimovimiento.get(numeromovimientos-1)[i][j] = new posicion(null);
             }
         }
 
         for(int g=0;g<8;g++){
             for(int h=0;h<8;h++){
                 if(tablero[g][h].getpieza()==null){
-                    ultimosmovimientos.get(numeromovimientos-1)[g][h].setpieza(null);
+                    ultimovimiento.get(numeromovimientos-1)[g][h].setpieza(null);
                 }else{
-                    ultimosmovimientos.get(numeromovimientos-1)[g][h].setpieza(tablero[g][h].getpieza());
+                    ultimovimiento.get(numeromovimientos-1)[g][h].setpieza(tablero[g][h].getpieza());
                 }
             }
         }
@@ -787,10 +787,10 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
             for(int g=0;g<8;g++){
                 for(int h=0;h<8;h++){
-                    if(ultimosmovimientos.get(numeromovimientos-1)[g][h].getpieza()==null){
+                    if(ultimovimiento.get(numeromovimientos-1)[g][h].getpieza()==null){
                         tablero[g][h].setpieza(null);
                     }else{
-                        tablero[g][h].setpieza(ultimosmovimientos.get(numeromovimientos-1)[g][h].getpieza());
+                        tablero[g][h].setpieza(ultimovimiento.get(numeromovimientos-1)[g][h].getpieza());
                     }
                 }
             }
