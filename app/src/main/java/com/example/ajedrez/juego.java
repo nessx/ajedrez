@@ -20,6 +20,7 @@ import java.util.ArrayList;
 
 public class juego extends AppCompatActivity implements View.OnClickListener{
 
+    //Declacion de vartiables
     public Boolean Primerturno;
     public ArrayList<Coordenadas> listacoordenadas = new ArrayList<>();
     public posicion[][] tablero = new posicion[8][8];
@@ -36,50 +37,25 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
     //defino las piezas
     // "x" es la parte de arriba y "y" la de abajo de las piezas
-    Pieza xrey;
-    Pieza yrey;
+    Pieza xrey, yrey;
 
-    Pieza xreina;
-    Pieza yreina;
+    Pieza xreina, yreina;
 
-    Pieza xcaballo1;
-    Pieza xcaballo2;
-    Pieza ycaballo1;
-    Pieza ycaballo2;
+    Pieza xcaballo1, xcaballo2, ycaballo1, ycaballo2;
 
-    Pieza xtorre1;
-    Pieza xtorre2;
-    Pieza ytorre1;
-    Pieza ytorre2;
+    Pieza xtorre1, xtorre2, ytorre1, ytorre2;
 
-    Pieza xalfil1;
-    Pieza xalfil2;
-    Pieza yalfil1;
-    Pieza yalfil2;
+    Pieza xalfil1, xalfil2, yalfil1, yalfil2;
 
-    Pieza xpeon1;
-    Pieza xpeon2;
-    Pieza xpeon3;
-    Pieza xpeon4;
-    Pieza xpeon5;
-    Pieza xpeon6;
-    Pieza xpeon7;
-    Pieza xpeon8;
+    Pieza xpeon1,xpeon2, xpeon3, xpeon4, xpeon5, xpeon6, xpeon7, xpeon8;
 
-    Pieza ypeon1;
-    Pieza ypeon2;
-    Pieza ypeon3;
-    Pieza ypeon4;
-    Pieza ypeon5;
-    Pieza ypeon6;
-    Pieza ypeon7;
-    Pieza ypeon8;
+    Pieza ypeon1, ypeon2, ypeon3, ypeon4, ypeon5, ypeon6, ypeon7, ypeon8;
     //end
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        // hace que la barra de notificacion sea transparente BECAREFUL
+        // hace que la barra de notificacion sea transparente
         if (Build.VERSION.SDK_INT >= 29) {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
         }
@@ -92,6 +68,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         juego_terminado.setVisibility(View.INVISIBLE);
         opciones_peon.setVisibility(View.INVISIBLE);
     }
+    //END
 
     private void inicializartablero() {
         xrey = new rey(false);
@@ -140,6 +117,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
             }
         }
 
+        //aigna piezas a cada espacio en la matriz
         tablero[0][7].setpieza(ytorre1);
         tablero[1][7].setpieza(ycaballo1);
         tablero[2][7].setpieza(yalfil1);
