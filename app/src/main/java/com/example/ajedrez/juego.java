@@ -32,8 +32,6 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
     //variable de eleccion de bandos, hacer una pregunta que en funcion a ella esta variable
     //sea verdadera y si lo es le toca a las negras de lo contrario a las blancas
 
-    public Boolean eleccion = false;
-
     public Coordenadas ultimaposicion = null ;
     public Coordenadas posicionclickada = new Coordenadas(0, 0);
     public TextView juego_terminado;
@@ -83,88 +81,45 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
     //END
 
     private void inicializartablero() {
+        // "x" es la parte de arriba (negras) y "y" la de abajo de las piezas (blancas)
+        xrey = new rey(false);
+        yrey = new rey(true);
 
-        if (eleccion){
-            // "x" es la parte de arriba (negras) y "y" la de abajo de las piezas (blancas)
-            xrey = new rey(false);
-            yrey = new rey(true);
+        xreina = new reina(false);
+        yreina = new reina(true);
 
-            xreina = new reina(false);
-            yreina = new reina(true);
+        xtorre1 = new torre(false);
+        xtorre2 = new torre(false);
+        ytorre1 = new torre(true);
+        ytorre2 = new torre(true);
 
-            xtorre1 = new torre(false);
-            xtorre2 = new torre(false);
-            ytorre1 = new torre(true);
-            ytorre2 = new torre(true);
+        xcaballo1 = new caballo(false);
+        xcaballo2 = new caballo(false);
+        ycaballo1 = new caballo(true);
+        ycaballo2 = new caballo(true);
 
-            xcaballo1 = new caballo(false);
-            xcaballo2 = new caballo(false);
-            ycaballo1 = new caballo(true);
-            ycaballo2 = new caballo(true);
+        xalfil1 = new alfil(false);
+        xalfil2 = new alfil(false);
+        yalfil1 = new alfil(true);
+        yalfil2 = new alfil(true);
 
-            xalfil1 = new alfil(false);
-            xalfil2 = new alfil(false);
-            yalfil1 = new alfil(true);
-            yalfil2 = new alfil(true);
+        xpeon1 = new peon(false);
+        xpeon2 = new peon(false);
+        xpeon3 = new peon(false);
+        xpeon4 = new peon(false);
+        xpeon5 = new peon(false);
+        xpeon6 = new peon(false);
+        xpeon7 = new peon(false);
+        xpeon8 = new peon(false);
 
-            xpeon1 = new peon(false);
-            xpeon2 = new peon(false);
-            xpeon3 = new peon(false);
-            xpeon4 = new peon(false);
-            xpeon5 = new peon(false);
-            xpeon6 = new peon(false);
-            xpeon7 = new peon(false);
-            xpeon8 = new peon(false);
-
-            ypeon1 = new peon(true);
-            ypeon2 = new peon(true);
-            ypeon3 = new peon(true);
-            ypeon4 = new peon(true);
-            ypeon5 = new peon(true);
-            ypeon6 = new peon(true);
-            ypeon7 = new peon(true);
-            ypeon8 = new peon(true);
-        }
-        else{
-            xrey = new rey(true);
-            yrey = new rey(false);
-
-            xreina = new reina(true);
-            yreina = new reina(false);
-
-            xtorre1 = new torre(true);
-            xtorre2 = new torre(true);
-            ytorre1 = new torre(false);
-            ytorre2 = new torre(false);
-
-            xcaballo1 = new caballo(true);
-            xcaballo2 = new caballo(true);
-            ycaballo1 = new caballo(false);
-            ycaballo2 = new caballo(false);
-
-            xalfil1 = new alfil(true);
-            xalfil2 = new alfil(true);
-            yalfil1 = new alfil(false);
-            yalfil2 = new alfil(false);
-
-            xpeon1 = new peon(true);
-            xpeon2 = new peon(true);
-            xpeon3 = new peon(true);
-            xpeon4 = new peon(true);
-            xpeon5 = new peon(true);
-            xpeon6 = new peon(true);
-            xpeon7 = new peon(true);
-            xpeon8 = new peon(true);
-
-            ypeon1 = new peon(false);
-            ypeon2 = new peon(false);
-            ypeon3 = new peon(false);
-            ypeon4 = new peon(false);
-            ypeon5 = new peon(false);
-            ypeon6 = new peon(false);
-            ypeon7 = new peon(false);
-            ypeon8 = new peon(false);
-        }
+        ypeon1 = new peon(true);
+        ypeon2 = new peon(true);
+        ypeon3 = new peon(true);
+        ypeon4 = new peon(true);
+        ypeon5 = new peon(true);
+        ypeon6 = new peon(true);
+        ypeon7 = new peon(true);
+        ypeon8 = new peon(true);
 
         for (int i = 0; i < 8; i++) {
             for (int j = 0; j < 8; j++) {
@@ -367,7 +322,11 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
         numeromovimientos = 0;
         algoseleccionado = false;
-        Primerturno = true;
+
+        //si esto es true, las blancas tienen el primer turno si es falso lo tienen las negras
+        Primerturno = false;
+
+
         settablero();
     }
 
