@@ -29,7 +29,9 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
     public posicion[][] tablero2 = new posicion[8][8];
     public Boolean algoseleccionado = false;
 
-    //variable de eleccion de bandos
+    //variable de eleccion de bandos, hacer una pregunta que en funcion a ella esta variable
+    //sea verdadera y si lo es le toca a las negras de lo contrario a las blancas
+
     public Boolean eleccion = false;
 
     public Coordenadas ultimaposicion = null ;
@@ -46,7 +48,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
     EditText name;
 
     //defino las piezas
-    // "x" es la parte de arriba y "y" la de abajo de las piezas
+    // "x" es la parte de arriba (negras) y "y" la de abajo de las piezas (blancas)
     Pieza xrey, yrey;
 
     Pieza xreina, yreina;
@@ -83,6 +85,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
     private void inicializartablero() {
 
         if (eleccion){
+            // "x" es la parte de arriba (negras) y "y" la de abajo de las piezas (blancas)
             xrey = new rey(false);
             yrey = new rey(true);
 
