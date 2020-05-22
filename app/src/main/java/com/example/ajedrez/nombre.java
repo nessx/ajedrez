@@ -32,9 +32,6 @@ public class nombre extends AppCompatActivity{
         enviarnombre = findViewById(R.id.enviar);
         textosel = findViewById(R.id.nombres);
 
-        //no configured
-        enviareleccion = findViewById(R.id.selenviar);
-
         enviarnombre.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
