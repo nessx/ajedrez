@@ -1,8 +1,5 @@
 package com.example.ajedrez;
 
-import androidx.appcompat.app.AppCompatActivity;
-
-import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
@@ -12,12 +9,13 @@ import android.widget.LinearLayout;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
+import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.ajedrez.piezas.Pieza;
 import com.example.ajedrez.piezas.alfil;
 import com.example.ajedrez.piezas.caballo;
 import com.example.ajedrez.piezas.peon;
-import com.example.ajedrez.piezas.Pieza;
 import com.example.ajedrez.piezas.reina;
 import com.example.ajedrez.piezas.rey;
 import com.example.ajedrez.piezas.torre;
@@ -73,6 +71,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         // hace que la barra de notificacion sea transparente
         if (Build.VERSION.SDK_INT >= 29) {
             getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_LAYOUT_STABLE | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN);
@@ -332,8 +331,9 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         algoseleccionado = false;
 
         //si esto es true, las blancas tienen el primer turno si es falso lo tienen las negras
-        Primerturno = true;
+        nombre turno = new nombre();
 
+        Primerturno = turno.geturno();
 
         settablero();
     }

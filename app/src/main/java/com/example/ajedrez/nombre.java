@@ -17,13 +17,12 @@ public class nombre extends AppCompatActivity{
     //boton radio
     public RadioGroup selficha;
     public RadioButton optblanca, optnegra;
-    public Boolean eleccion;
-
     public TextView textosel,nombres;
     Button enviareleccion,enviarnombre;
     public EditText name;
-
+    public boolean turnos;
     final int random_int = (int)(Math.random() * (2 - 1 + 1) + 1);
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -44,6 +43,7 @@ public class nombre extends AppCompatActivity{
                 selficha.setVisibility(View.VISIBLE);
                 if (random_int==1){
                     textosel.setText("Jugador 1 elije ficha");
+
                 }
                 else if (random_int==2){
                     textosel.setText("Jugador 2 elije ficha");
@@ -57,13 +57,13 @@ public class nombre extends AppCompatActivity{
             @Override
             public void onCheckedChanged(RadioGroup group, int checkedId) {
                 if (checkedId == R.id.optblanca) {
-                    Toast.makeText(getApplicationContext(), "choice: blanca",
+                    Toast.makeText(getApplicationContext(), "Elegiste: blanca",
                             Toast.LENGTH_SHORT).show();
-                    eleccion = true;
+                    turnos = true;
                 } else if (checkedId == R.id.optnegra) {
-                    Toast.makeText(getApplicationContext(), "choice: negras",
+                    Toast.makeText(getApplicationContext(), "Elegiste: negras",
                             Toast.LENGTH_SHORT).show();
-                    eleccion = false;
+                    turnos = false;
                 } else {
                     Toast.makeText(getApplicationContext(), "No las seleccionado nada",
                             Toast.LENGTH_SHORT).show();
@@ -73,4 +73,13 @@ public class nombre extends AppCompatActivity{
             }
         });
     }
+    //turno
+    Boolean geturno(){
+        return turnos;
+    }
+
+    public void setutno(Boolean turnos){
+        this.turnos=turnos;
+    }
+    //turno
 }
