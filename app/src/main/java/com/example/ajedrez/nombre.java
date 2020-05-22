@@ -56,11 +56,11 @@ public class nombre extends AppCompatActivity{
                 if (checkedId == R.id.optblanca) {
                     Toast.makeText(getApplicationContext(), "Elegiste: blanca",
                             Toast.LENGTH_SHORT).show();
-                    turnos = true;
+                    turnos = false;
                 } else if (checkedId == R.id.optnegra) {
                     Toast.makeText(getApplicationContext(), "Elegiste: negras",
                             Toast.LENGTH_SHORT).show();
-                    turnos = false;
+                    turnos = true;
                 } else {
                     Toast.makeText(getApplicationContext(), "No las seleccionado nada",
                             Toast.LENGTH_SHORT).show();
