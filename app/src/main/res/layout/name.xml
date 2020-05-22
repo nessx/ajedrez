@@ -50,15 +50,15 @@
 
     <RadioGroup
         android:id="@+id/selficha"
-        android:layout_width="144dp"
-        android:layout_height="148dp"
-        android:visibility="invisible"
+        android:layout_width="142dp"
+        android:layout_height="74dp"
+        android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.501"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.59000003">
+        app:layout_constraintVertical_bias="0.51">
 
         <RadioButton
             android:id="@+id/optblanca"
@@ -78,19 +78,6 @@
             android:textSize="18sp"
             android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <Button
-            android:id="@+id/selenviar"
-            android:layout_width="match_parent"
-            android:layout_height="36dp"
-            android:background="@drawable/custom_botom"
-            android:gravity="center"
-            android:text="Enviar"
-            android:textColor="#000000" />
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
