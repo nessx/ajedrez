@@ -2,13 +2,17 @@ package com.example.ajedrez;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.LinearLayout;
+import android.widget.RadioButton;
+import android.widget.RadioGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.ajedrez.piezas.alfil;
 import com.example.ajedrez.piezas.caballo;
@@ -24,13 +28,17 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
     //Declacion de vartiables
     public Boolean Primerturno;
+    public Boolean eleccion;
     public ArrayList<Coordenadas> listacoordenadas = new ArrayList<>();
     public posicion[][] tablero = new posicion[8][8];
     public posicion[][] tablero2 = new posicion[8][8];
     public Boolean algoseleccionado = false;
 
-    //variable de eleccion de bandos, hacer una pregunta que en funcion a ella esta variable
-    //sea verdadera y si lo es le toca a las negras de lo contrario a las blancas
+    public RadioGroup selficha;
+    public RadioButton optblanca, optnegra;
+
+    public TextView textosel;
+    public Button selenviar;
 
     public Coordenadas ultimaposicion = null ;
     public Coordenadas posicionclickada = new Coordenadas(0, 0);
@@ -42,8 +50,8 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
     public int numeromovimientos;
 
     //recogiendo nombre
-    Button enviar;
-    EditText name;
+    public Button enviar;
+    public EditText name;
 
     //defino las piezas
     // "x" es la parte de arriba (negras) y "y" la de abajo de las piezas (blancas)
@@ -324,7 +332,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         algoseleccionado = false;
 
         //si esto es true, las blancas tienen el primer turno si es falso lo tienen las negras
-        Primerturno = false;
+        Primerturno = true;
 
 
         settablero();
