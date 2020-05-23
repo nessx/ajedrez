@@ -40,7 +40,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
     public Coordenadas ultimaposicion = null ;
     public Coordenadas posicionclickada = new Coordenadas(0, 0);
-    public TextView juego_terminado;
+    public TextView juego_terminado,titulo;
     public TextView[][] ftablero = new TextView[8][8];
     public TextView[][] fondodetablero = new TextView[8][8];
     public ArrayList<posicion[][]> ultimovimiento = new ArrayList<>();
@@ -80,6 +80,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
         inicializartablero();
         juego_terminado = (TextView)findViewById(R.id.juego_terminado);
+        titulo = (TextView)findViewById(R.id.titulo);
         opciones_peon = (LinearLayout)findViewById(R.id.opciones_peon);
 
         juego_terminado.setVisibility(View.INVISIBLE);
@@ -332,8 +333,9 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
         //si esto es true, las blancas tienen el primer turno si es falso lo tienen las negras
         nombre turno = new nombre();
+        //no usado
 
-        Primerturno = turno.geturno();
+        Primerturno = true;
 
         settablero();
     }
@@ -707,6 +709,9 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
                     if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza() instanceof rey){
                         if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza().esblanca() != Primerturno){
                             juego_terminado.setVisibility(View.VISIBLE);
+
+                            //test
+                            titulo.setVisibility(View.INVISIBLE);
                         }
                     }
                     tablero[posicionclickada.getX()][posicionclickada.getY()].setpieza(tablero[ultimaposicion.getX()][ultimaposicion.getY()].getpieza());
@@ -735,8 +740,9 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
                     if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza() !=null){
                         if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza().esblanca() != Primerturno){
                             if(moverselec(listacoordenadas , posicionclickada)){
-
                                 registrotablero();
+
+                                //si la reina muere esto es global tanto como si muere la tuya como la de el
                                 if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza() instanceof rey){
                                     if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza().esblanca() != Primerturno){
                                         juego_terminado.setVisibility(View.VISIBLE);
