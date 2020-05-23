@@ -1109,7 +1109,7 @@
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
         android:fontFamily="@font/roboto_bold"
-        android:text="Partida termianda!!"
+        android:text="Partida terminada!!"
         android:textColor="#FF0000"
         android:textSize="40sp"
         android:textStyle="bold"

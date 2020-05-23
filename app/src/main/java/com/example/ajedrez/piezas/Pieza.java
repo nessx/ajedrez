@@ -8,6 +8,7 @@ import java.util.ArrayList;
 public class Pieza {
 
     private boolean blanca;
+    //si este boobleano es falso todas son negras
 
     Pieza(boolean blanca) {
         this.blanca = blanca;

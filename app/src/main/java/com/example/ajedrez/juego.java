@@ -748,6 +748,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
                                         juego_terminado.setVisibility(View.VISIBLE);
                                     }
                                 }
+
                                 tablero[posicionclickada.getX()][posicionclickada.getY()].setpieza(tablero[ultimaposicion.getX()][ultimaposicion.getY()].getpieza());
                                 tablero[ultimaposicion.getX()][ultimaposicion.getY()].setpieza(null);
 
