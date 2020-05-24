@@ -16,6 +16,6 @@ public class Ayuda extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.name);
+        setContentView(R.layout.ayuda);
     }
 }
