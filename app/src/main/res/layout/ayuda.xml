@@ -18,18 +18,102 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.071" />
+        app:layout_constraintVertical_bias="0.109" />
 
-    <TextView
-        android:id="@+id/textView2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="@font/roboto_bold"
-        android:text="TextView"
-        android:textColor="#000000"
+    <ScrollView
+        android:layout_width="403dp"
+        android:layout_height="502dp"
+        android:layout_marginStart="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.338" />
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintVertical_bias="0.971">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/Inicio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="En este juego las normas son muy simples, hay diferentes dichas y
+    cada ficha puede moverse de una manera concreta, el objetivo del juego es comerse al Rey
+    enemigo, una vez el rey este muerto la partida terminara.
+    Ahora nombraremos los movimientos validos para cada pieza:"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Peon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Peon: Esta pieza solo puede moverse hacia adelante un cuadro pero tiene 2 excepciones, la primera
+    es cuando sale de su posicion inicial, en ese momento esta pieza puede moverse 2 cuadros hacia adelante,
+    en el segundo caso es cuando quiere comer, esta pieza solo puede comer en diagona hacia adelante, no puede
+    comer una ficha que tiene en frente ni tampoco retroceder."
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Caballo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Caballo: Esta pieza puede moverse tanto hacia adelante como hacia atras, su pecliaridad es que esta ficha para
+    moverse tiene que ser 3 cuadros rectos y uno hacia un lado (izquierda o derecha) dando la forma de una L."
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Alfil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Alfil: Esta pieza solo puede moverse en diagonal, hay 2 de estas en cada lado, una podra moverse en diagonal
+    en los cuadros blancos y la otra en los cuadros azules, puede moverse hacia adelante o atras pero siempre en diagonal!."
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Torre"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Torre: Esta pieza solo puede moverse en linea recta hasta todos los cuadros que esten sin una pieza,
+    puede moverse adelante, atras y a los lados."
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Reina"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Reina: esta pieza puede moverse hacia adelante, atras, los lados y en diagonal, es como tener
+    la torre y el alfil en una sola pieza."
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/Rey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:text="Rey: Esta pieza solo puede moverse un cuadrado hacia cualquier lado, es la mas importante ya que si muere
+    acabó el juego."
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/By"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_bold"
+                android:gravity="right"
+                android:text="DAM 1 - BANANA JUICE TEAM 2020"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
