@@ -94,10 +94,10 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         selplayer2 = findViewById(R.id.selplayer2);
 
         String seleplayer1 = (String) getIntent().getStringExtra("JUGADOR1");
-        selplayer1.setText("Blancas: "+seleplayer1);
+        selplayer1.setText(seleplayer1);
 
         String seleplayer2 = (String) getIntent().getStringExtra("JUGADOR2");
-        selplayer2.setText("Negras: "+seleplayer2);
+        selplayer2.setText(seleplayer2);
     }
     //END
 
