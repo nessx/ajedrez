@@ -911,7 +911,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
                     ftablero[posicionclickada.getX()][posicionclickada.getY()].setBackgroundResource(R.drawable.wcaballo);
                 }else{
                     tablero[posicionclickada.getX()][posicionclickada.getY()].setpieza(new caballo(false));
-                    ftablero[posicionclickada.getX()][posicionclickada.getY()].setBackgroundResource(R.drawable.balfil);
+                    ftablero[posicionclickada.getX()][posicionclickada.getY()].setBackgroundResource(R.drawable.bcaballo);
 
                 }
                 break;

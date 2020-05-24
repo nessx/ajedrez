@@ -1,5 +1,16 @@
 package com.example.ajedrez;
-
+/**
+ * <h1>Menu inicial</h1>
+ * Aqui estan los botones que se ven apenas iniciar la app:
+ * Jugar (Inicia el juego)
+ * Estadisticas (Muestra las estadisticas de las partidas)
+ * Sobre nosotros (Informacion de los creadores de la app)
+ * Solicitar ayuda (Informacion de las normas de juego)
+ *
+ * @author  Jeremy, Nestor, Hector
+ * @version 1.0
+ * @since   24-05-2020
+ */
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
@@ -33,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
         help.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent2 = new Intent(MainActivity.this, Dudas_del_juego.class);
+                Intent intent2 = new Intent(MainActivity.this, Ayuda.class);
                 startActivity(intent2);
             }
         });

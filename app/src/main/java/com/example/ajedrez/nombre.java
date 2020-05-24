@@ -1,5 +1,15 @@
 package com.example.ajedrez;
-
+/**
+ * <h1>Solicitud de nombre</h1>
+ * Aqui pedimos los nombres de los usuarios y se crea
+ * un numero ramdom entre el 1 y el 2, con este numero
+ * elegiremos un usuario ramdom y sera el que podra
+ * elegir su color de ficha e iniciara el juego.
+ *
+ * @author  Jeremy, Nestor, Hector
+ * @version 1.0
+ * @since   24-05-2020
+ */
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
