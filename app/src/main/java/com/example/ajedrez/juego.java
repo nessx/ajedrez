@@ -41,7 +41,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
     public Coordenadas ultimaposicion = null ;
     public Coordenadas posicionclickada = new Coordenadas(0, 0);
-    public TextView juego_terminado,titulo;
+    public TextView juego_terminado,titulo,ganador;
     public TextView[][] ftablero = new TextView[8][8];
     public TextView[][] fondodetablero = new TextView[8][8];
     public ArrayList<posicion[][]> ultimovimiento = new ArrayList<>();
@@ -84,6 +84,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         inicializartablero();
         juego_terminado = (TextView)findViewById(R.id.juego_terminado);
         titulo = (TextView)findViewById(R.id.titulo);
+        ganador = (TextView)findViewById(R.id.ganador);
         opciones_peon = (LinearLayout)findViewById(R.id.opciones_peon);
 
         juego_terminado.setVisibility(View.INVISIBLE);
@@ -761,6 +762,24 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
                                     if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza().esblanca() != Primerturno){
                                         juego_terminado.setVisibility(View.VISIBLE);
                                     }
+                                }
+
+                                //si muere el rey negro
+                                if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza() == xrey){
+                                    String seleplayer1 = (String) getIntent().getStringExtra("JUGADOR1");
+                                    ganador.setVisibility(View.VISIBLE);
+                                    ganador.setText(seleplayer1+" Ha ganado");
+
+                                    //titulo.setVisibility(View.INVISIBLE);
+                                }
+
+                                //si muere el rey blanco
+                                if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza() == yrey){
+                                    //titulo.setVisibility(View.INVISIBLE);
+
+                                    String seleplayer2 = (String) getIntent().getStringExtra("JUGADOR2");
+                                    ganador.setVisibility(View.VISIBLE);
+                                    ganador.setText(seleplayer2+" Ha ganado");
                                 }
 
                                 tablero[posicionclickada.getX()][posicionclickada.getY()].setpieza(tablero[ultimaposicion.getX()][ultimaposicion.getY()].getpieza());
