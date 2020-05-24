@@ -6,9 +6,16 @@
         <color name="colortablerooscuro">#0B51AA</color>
         <color name="colortableroclaro">#232220</color>
         <color name="colorpeligro">#0c82ff</color>
-        <color name="colorposdispo">#795e45e6</color>
+        <color name="colorposdispo">#3f48cc</color>
         <color name="colormov">#EBEB51</color>
         <color name="colorreyenpeligro">#8dff0004</color>
         <color name="backgroundBoard">#d9732b</color>
         <color name="elije">#898989</color>
+
+
+        <color name="gradient_start_color">#4c84ff</color>
+        <color name="gradient_end_color">#18a3fe</color>
+        <color name="tab_indicator_gray">#c0c0c0</color>
+        <color name="intro_title_color">#000000</color>
+        <color name="intro_description_color">#656565</color>
 </resources>

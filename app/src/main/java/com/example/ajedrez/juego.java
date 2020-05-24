@@ -11,6 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.example.ajedrez.piezas.Pieza;
 import com.example.ajedrez.piezas.alfil;
@@ -40,7 +41,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
     public Coordenadas ultimaposicion = null ;
     public Coordenadas posicionclickada = new Coordenadas(0, 0);
-    public TextView juego_terminado;
+    public TextView juego_terminado,titulo;
     public TextView[][] ftablero = new TextView[8][8];
     public TextView[][] fondodetablero = new TextView[8][8];
     public ArrayList<posicion[][]> ultimovimiento = new ArrayList<>();
@@ -66,6 +67,8 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
     Pieza xpeon1,xpeon2, xpeon3, xpeon4, xpeon5, xpeon6, xpeon7, xpeon8;
 
     Pieza ypeon1, ypeon2, ypeon3, ypeon4, ypeon5, ypeon6, ypeon7, ypeon8;
+
+    public TextView selplayer1,selplayer2;
     //end
 
     @Override
@@ -80,10 +83,21 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
         inicializartablero();
         juego_terminado = (TextView)findViewById(R.id.juego_terminado);
+        titulo = (TextView)findViewById(R.id.titulo);
         opciones_peon = (LinearLayout)findViewById(R.id.opciones_peon);
 
         juego_terminado.setVisibility(View.INVISIBLE);
         opciones_peon.setVisibility(View.INVISIBLE);
+
+        //eleccion de bando
+        selplayer1 = findViewById(R.id.selplayer1);
+        selplayer2 = findViewById(R.id.selplayer2);
+
+        String seleplayer1 = (String) getIntent().getStringExtra("JUGADOR1");
+        selplayer1.setText(seleplayer1);
+
+        String seleplayer2 = (String) getIntent().getStringExtra("JUGADOR2");
+        selplayer2.setText(seleplayer2);
     }
     //END
 
@@ -332,8 +346,9 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
         //si esto es true, las blancas tienen el primer turno si es falso lo tienen las negras
         nombre turno = new nombre();
+        //no usado
 
-        Primerturno = turno.geturno();
+        Primerturno = true;
 
         settablero();
     }
@@ -707,6 +722,9 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
                     if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza() instanceof rey){
                         if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza().esblanca() != Primerturno){
                             juego_terminado.setVisibility(View.VISIBLE);
+
+                            //test
+                            titulo.setVisibility(View.INVISIBLE);
                         }
                     }
                     tablero[posicionclickada.getX()][posicionclickada.getY()].setpieza(tablero[ultimaposicion.getX()][ultimaposicion.getY()].getpieza());
@@ -735,13 +753,16 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
                     if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza() !=null){
                         if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza().esblanca() != Primerturno){
                             if(moverselec(listacoordenadas , posicionclickada)){
-
                                 registrotablero();
+
+                                //si la reina muere esto es global tanto como si muere la tuya como la de el
+                                //el metodo instanceof es -> SI ES UN
                                 if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza() instanceof rey){
                                     if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza().esblanca() != Primerturno){
                                         juego_terminado.setVisibility(View.VISIBLE);
                                     }
                                 }
+
                                 tablero[posicionclickada.getX()][posicionclickada.getY()].setpieza(tablero[ultimaposicion.getX()][ultimaposicion.getY()].getpieza());
                                 tablero[ultimaposicion.getX()][ultimaposicion.getY()].setpieza(null);
 
@@ -835,7 +856,6 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         }
     }
     //END
-
     public void selectpeon(View v){
         int x = v.getId();
         switch (x){
