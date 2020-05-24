@@ -1,4 +1,14 @@
 package com.example.ajedrez.piezas;
+/**
+ * <h1>Movimientos de Reina</h1>
+ * Aqui definimos los movimientos posibles que puede hacer la Reina
+ * <p>
+ * <b>Nota:</b> usamos como referencia el objeto pieza
+ *
+ * @author  Jeremy, Nestor, Hector
+ * @version 1.0
+ * @since   24-05-2020
+ */
 
 import com.example.ajedrez.Coordenadas;
 import com.example.ajedrez.posicion;

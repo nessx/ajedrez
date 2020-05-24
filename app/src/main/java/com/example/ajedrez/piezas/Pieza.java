@@ -1,4 +1,15 @@
 package com.example.ajedrez.piezas;
+/**
+ * <h1>Movimientos de Pieza</h1>
+ * Aqui definimos el molde de las piezas que crearemos despues
+ * <p>
+ * <b>Nota:</b> el tablero es de 8x8 asi que todas tienen que poder
+ * moverse por este campo
+ *
+ * @author  Jeremy, Nestor, Hector
+ * @version 1.0
+ * @since   24-05-2020
+ */
 
 import com.example.ajedrez.Coordenadas;
 import com.example.ajedrez.posicion;
