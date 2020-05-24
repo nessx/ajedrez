@@ -29,6 +29,14 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        help.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent2 = new Intent(MainActivity.this, Dudas_del_juego.class);
+                startActivity(intent2);
+            }
+        });
     }
 }
 
