@@ -57,15 +57,16 @@ public class nombre extends AppCompatActivity{
                                 Toast.makeText(getApplicationContext(), "Elegiste: blanca",
                                         Toast.LENGTH_SHORT).show();
                                 intent.putExtra("JUGADOR1", Jugador1);
+                                intent.putExtra("JUGADOR2", Jugador2);
                             } else if (checkedId == R.id.optnegra) {
                                 Toast.makeText(getApplicationContext(), "Elegiste: negras",
                                         Toast.LENGTH_SHORT).show();
-                                intent.putExtra("JUGADOR1", Jugador1);
+                                intent.putExtra("JUGADOR2", Jugador1);
+                                intent.putExtra("JUGADOR1", Jugador2);
                             } else {
                                 Toast.makeText(getApplicationContext(), "No las seleccionado nada",
                                         Toast.LENGTH_SHORT).show();
                             }
-                            intent.putExtra("JUGADOR2", Jugador2);
                             //intent.putExtra("JUGADOR1", Jugador1);
                             startActivity(intent);
                         }
@@ -80,17 +81,18 @@ public class nombre extends AppCompatActivity{
                             if (checkedId == R.id.optblanca){
                                 Toast.makeText(getApplicationContext(), "Elegiste: blanca",
                                         Toast.LENGTH_SHORT).show();
-                                intent.putExtra("JUGADOR2", Jugador2);
+                                intent.putExtra("JUGADOR2", Jugador1);
+                                intent.putExtra("JUGADOR1", Jugador2);
                             } else if (checkedId == R.id.optnegra) {
                                 Toast.makeText(getApplicationContext(), "Elegiste: negras",
                                         Toast.LENGTH_SHORT).show();
                                 intent.putExtra("JUGADOR2", Jugador2);
+                                intent.putExtra("JUGADOR1", Jugador1);
                             } else {
                                 Toast.makeText(getApplicationContext(), "No las seleccionado nada",
                                         Toast.LENGTH_SHORT).show();
                             }
                             //intent.putExtra("JUGADOR2", Jugador2);
-                            intent.putExtra("JUGADOR1", Jugador1);
                             startActivity(intent);
                         }
                     });
