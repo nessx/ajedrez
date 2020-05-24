@@ -11,6 +11,7 @@ import android.widget.RadioGroup;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 
 import com.example.ajedrez.piezas.Pieza;
 import com.example.ajedrez.piezas.alfil;
@@ -66,6 +67,8 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
     Pieza xpeon1,xpeon2, xpeon3, xpeon4, xpeon5, xpeon6, xpeon7, xpeon8;
 
     Pieza ypeon1, ypeon2, ypeon3, ypeon4, ypeon5, ypeon6, ypeon7, ypeon8;
+
+    public TextView selplayer1,selplayer2;
     //end
 
     @Override
@@ -85,6 +88,16 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
 
         juego_terminado.setVisibility(View.INVISIBLE);
         opciones_peon.setVisibility(View.INVISIBLE);
+
+        //eleccion de bando
+        selplayer1 = findViewById(R.id.selplayer1);
+        selplayer2 = findViewById(R.id.selplayer2);
+
+        String seleplayer1 = (String) getIntent().getStringExtra("JUGADOR1");
+        selplayer1.setText("Blancas: "+seleplayer1);
+
+        String seleplayer2 = (String) getIntent().getStringExtra("JUGADOR2");
+        selplayer2.setText("Negras: "+seleplayer2);
     }
     //END
 
@@ -743,6 +756,7 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
                                 registrotablero();
 
                                 //si la reina muere esto es global tanto como si muere la tuya como la de el
+                                //el metodo instanceof es -> SI ES UN
                                 if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza() instanceof rey){
                                     if(tablero[posicionclickada.getX()][posicionclickada.getY()].getpieza().esblanca() != Primerturno){
                                         juego_terminado.setVisibility(View.VISIBLE);
@@ -842,7 +856,6 @@ public class juego extends AppCompatActivity implements View.OnClickListener{
         }
     }
     //END
-
     public void selectpeon(View v){
         int x = v.getId();
         switch (x){
